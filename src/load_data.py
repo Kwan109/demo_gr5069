@@ -29,6 +29,11 @@ display(df)
 
 # COMMAND ----------
 
+# Show me the nationality of all F1 drivers
+display(df.groupby('nationality').count())
+
+# COMMAND ----------
+
 # Create a view or table
 
 temp_table_name = "drivers_csv"
